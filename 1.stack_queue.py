@@ -80,14 +80,17 @@ d[0]
 
 
 # 프로그래머스 주식가격 풀이    input 값 prices = [1,2,3,2,3]
+# 주식시장에서 초당 가격의 변화값을 리스트로 입력해 그 가격이 하락할때까지 버틴 시간을 계산하는 문제
+# 요점은 시간!!
 def solution(prices):
-    answer = [0] * len(prices)  ## len(price)   
-    for i in range(len(prices)): 
-        for j in range(i+1, len(prices)):
-            if prices[i] <= prices[j]:
-                answer[i] += 1
-            else:
-                answer[i] += 1
+    answer = [0] * len(prices)  #len(prices)는 값의 길이 여기서는 개수 결과값 ## [0,0,0,0,0]
+    for i in range(len(prices)): #len(prices) 값은 5 따라서 range5는 0~4의 값을 갖는다
+        for j in range(i+1, len(prices)): #len(prices)= 5 i는 0부터시작하므로 1,5부터시작 j값은 1~4의 값을 갖는다.
+            if prices[i] <= prices[j]: # i가 0이고 j= 1,2,3,4 i가 1일때 j가 1,2,3,4값 대입
+                answer[i] += 1 #answer[0] = 첫째자리의미 i가 0일때  조건식 반복 
+            else:              # i 가 j 보다 작아질때까지 반복후 작아지면 마지막1을 플러스하고 break
+                answer[i] += 1 # 이후 i가 1일경우에 loop를 반복 인덱스값들이 정해진다.
                 break
     return answer
 
+# ddd
