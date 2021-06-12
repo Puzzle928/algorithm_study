@@ -17,13 +17,13 @@
 
 다 뒤집어보다보면 찾는 수가 나온다 종료..
 '''
-from typing_extensions import Unpack
+# from typing_extensions import Unpack
 
 
-def solution(trump):
-    for i in range(len(trump)): # 카드의 수만큼 반복 뒤집기
-        if trump[i] == 8: # 뒤집다가 카드가 8이 나왔다면
-            return i  # 그위치 값을 리턴한다.
+# def solution(trump):
+#     for i in range(len(trump)): # 카드의 수만큼 반복 뒤집기
+#         if trump[i] == 8: # 뒤집다가 카드가 8이 나왔다면
+#             return i  # 그위치 값을 리턴한다.
 
 
 
@@ -34,13 +34,13 @@ def solution(trump):
 
 # - 백트래킹
 
-# - 탐욕법
+# # - 탐욕법
 
-def solution(trump, loc):
-    if trump[loc] == 8:
-        return loc
-    else:
-        return solution(trump, loc+1)
+# def solution(trump, loc):
+#     if trump[loc] == 8:
+#         return loc
+#     else:
+#         return solution(trump, loc+1)
 
 '''
 이분 탐색
@@ -66,3 +66,85 @@ def solition(trump):
         elif trump[mid] > 8:
             left = mid - 1
     return mid
+
+
+# 모의고사
+answer = list(input())
+p1 = [1,2,3,4,5,1,2,3,4,5]
+
+p2 = [2,1,2,3,2,4,2,5,2,1,2,3,2,4,2,5]
+
+p3 = [3,3,1,1,2,2,4,4,5,5,3,3,1,1,2,2,4,4,5,5]
+
+giveup = [p1, p2, p3]
+
+score = [0,0,0]
+
+winner = []
+
+
+for x,i in enumerate(p1):
+    for y,j in enumerate(answer):
+        if x == y and i == j:
+            score[0]+= 1
+
+# for x,i in enumerate(p2):
+#     for y,j in enumerate(answer):
+#         if x == y and i == j:
+#             score[1]+= 1
+
+# for x,i in enumerate(p3):
+#     for y,j in enumerate(answer):
+#         if x == y and i == j:
+#             score[2]+= 1
+
+# for i,s in enumerate(score):
+#     if s == max(score):
+#         winner.append(i+1)
+    
+print(winner)
+
+# 소수찾기
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#숫자카드2
+
+# card = int(input())
+
+# n = input().split()
+
+# answer = int(input())
+
+# k = input().split()
+
+# g = [0] * answer
+
+# for i in n:
+#     for x,j in enumerate(k):
+#         if i == j:
+#             g[x] += 1
+# for x in g:
+#     print(x, end = ' ')
+
+
+
+
+
+
+
