@@ -58,6 +58,107 @@
 # print(sum(g))
 
 
+# 문자열 내 p와 y의 개수
+
+# 대문자와 소문자가 섞여있는 문자열 s가 주어집니다. s에 'p'의 개수와 'y'의 개수를 비교해 같으면 True, 다르면 False를 return 하는 solution를 완성하세요.
+#  'p', 'y' 모두 하나도 없는 경우는 항상 True를 리턴합니다. 단, 개수를 비교할 때 대문자와 소문자는 구별하지 않습니다.
+
+# 예를 들어 s가 "pPoooyY"면 true를 return하고 "Pyy"라면 false를 return합니다.
+
+# s = "pPoooyY" # 문자열입력
+# p_count = 0
+# y_count = 0
+# # print(s[1])
+# for i in s:
+#     if i == 'p' or i == 'P':
+#         p_count += 1
+#     if i == 'y' or i == 'Y':
+#         y_count += 1
+# if p_count == y_count:
+#     print(True)
+# else:
+#     print(False)
+
+
+
+
+# 같은 숫자 는 싫어!!
+# 배열 arr가 주어집니다. 배열 arr의 각 원소는 숫자 0부터 9까지로 이루어져 있습니다. 이때, 배열 arr에서 연속적으로 나타나는 숫자는 하나만 남기고 전부 제거하려고 합니다. 단, 제거된 후 남은 수들을 반환할 때는 배열 arr의 원소들의 순서를 유지해야 합니다. 예를 들면,
+
+# arr = [1, 1, 3, 3, 0, 1, 1] 이면 [1, 3, 0, 1] 을 return 합니다.
+# arr = [4, 4, 4, 3, 3] 이면 [4, 3] 을 return 합니다.
+# 배열 arr에서 연속적으로 나타나는 숫자는 제거하고 남은 수들을 return 하는 solution 함수를 완성해 주세요.
+
+
+# arr = [1, 1, 3, 3, 0, 1, 1]
+# arr2 = [4, 4, 4, 3, 3]
+# nosame = []
+# nosame.append(arr[0])
+# for i in range(len(arr)):    
+#     if arr[i] != nosame[len(nosame)-1]:
+#         nosame.append(arr[i])
+# print(nosame)
+
+
+
+# 가운데 글자 가져오기
+# 단어 s의 가운데 글자를 반환하는 함수, solution을 만들어 보세요. 
+# 단어의 길이가 짝수라면 가운데 두글자를 반환하면 됩니다.
+
+# s = "abcde"
+
+# if len(s) % 2 == 0:
+#     print(s[len(s)//2] , s[len(s)//2 + 1])
+# if len(s) % 2 != 0:
+#     print(s[len(s)//2])
+
+
+# x만큼 간격이 있는 n개의 숫자
+
+# 함수 solution은 정수 x와 자연수 n을 입력 받아, x부터 시작해 x씩 증가하는 숫자를 n개 지니는 리스트를 리턴해야 합니다. 다음 제한 조건을 보고, 조건을 만족하는 함수, solution을 완성해주세요.
+
+# x = int(input())
+# n = int(input())
+# answer = []
+# for i in range(1,n+1):
+#     answer.append(x*i)
+# print(answer)
+
+
+# 직사각형 별찍기
+# 이 문제에는 표준 입력으로 두 개의 정수 n 과 m 이 주어집니다.
+# 별(*) 문자를 이용해 가로의 길이가 n, 세로의 길이가 m 인 직사각형 형태를 출력해보세요.
+
+n, m = input().split()
+row = []
+for j in n:
+    row.append('*')
+print(row)
+
+
+# for i in m:
+#     print(row)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
