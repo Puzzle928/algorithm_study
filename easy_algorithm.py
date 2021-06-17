@@ -20,16 +20,18 @@
 
 
 # n = int(input())
+
 # watermellon = []
+
 # for i in range(1,n+1):
 #     if i % 2 != 0:
 #         watermellon.append("수")
-#     else:
+#     else: # 짝수
 #         watermellon.append("박")
-
+# # [수,박,수]
 # for e in watermellon:
 #     print(e, end ="")
-
+    # 수박수
 
 # 서울에서 김서방 찾기
 
@@ -113,6 +115,8 @@
 #     print(s[len(s)//2])
 
 
+
+
 # x만큼 간격이 있는 n개의 숫자
 
 # 함수 solution은 정수 x와 자연수 n을 입력 받아, x부터 시작해 x씩 증가하는 숫자를 n개 지니는 리스트를 리턴해야 합니다. 다음 제한 조건을 보고, 조건을 만족하는 함수, solution을 완성해주세요.
@@ -125,19 +129,71 @@
 # print(answer)
 
 
+
+
 # 직사각형 별찍기
 # 이 문제에는 표준 입력으로 두 개의 정수 n 과 m 이 주어집니다.
 # 별(*) 문자를 이용해 가로의 길이가 n, 세로의 길이가 m 인 직사각형 형태를 출력해보세요.
 
-n, m = input().split()
-row = []
-for j in n:
-    row.append('*')
-print(row)
+# n, m = map(int,input().split())
+# w = "*" * n
+# d = [w] * m
+
+# for i in d:
+#     print(i)
 
 
-# for i in m:
-#     print(row)
+
+
+# 평균 구하기
+# 정수를 담고 있는 배열 arr의 평균값을 return하는 함수, solution을 완성해보세요.
+
+# arr = [1,2,3,4]
+
+# avg = sum(arr) / len(arr)
+
+# print(avg)
+
+
+
+
+
+# 행렬의 덧셈              ---------------------------------------------------------------미완---------------------------------
+
+# 행렬의 덧셈은 행과 열의 크기가 같은 두 행렬의 같은 행, 같은 열의 값을 서로 더한 결과가 됩니다.
+#  2개의 행렬 arr1과 arr2를 입력받아, 행렬 덧셈의 결과를 반환하는 함수, solution을 완성해주세요.
+
+# arr1 = [[1,2],[2,3]]
+
+# arr2 = [[3,4],[5,6]]
+
+# return1 = [[0]* len(arr1[0])] * len(arr1)
+
+
+
+# p = int(len(arr1[0]))  # 행렬안에 있는 갯수!!
+
+# for i in range(p):
+#     for j in range(p):
+#         return1[i][j] = arr1[i][j] + arr2[i][j]
+    
+    
+
+# print(return1)
+
+
+# 짝수와 홀수
+# 정수 num이 짝수일 경우 "Even"을 반환하고 홀수인 경우 "Odd"를 반환하는 함수, solution을 완성해주세요.
+
+# def solution(num):
+#     if num % 2 == 0:
+#         return "Even"
+#     if num % 2 != 0:
+#         return "Odd"
+
+
+
+
 
 
 
