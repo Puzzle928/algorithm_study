@@ -168,7 +168,7 @@
 # arr2 = [[3,4],[5,6]]
 
 # return1 = [[0]* len(arr1[0])] * len(arr1)
-
+# print(return1) = [[0,0],[0,0]]       # arr에 맞게 틀을 만들어냄
 
 
 # p = int(len(arr1[0]))  # 행렬안에 있는 갯수!!
@@ -190,6 +190,23 @@
 #         return "Even"
 #     if num % 2 != 0:
 #         return "Odd"
+
+
+# 자릿수 더하기
+
+
+# 자연수 N이 주어지면, N의 각 자릿수의 합을 구해서 return 하는 solution 함수를 만들어 주세요.
+# 예를들어 N = 123이면 1 + 2 + 3 = 6을 return 하면 됩니다.
+
+# n = input()
+# d = list(str(n))
+# l = []
+# for i in d:
+#     l.append(int(i))
+
+# print(sum(l))
+
+
 
 
 
