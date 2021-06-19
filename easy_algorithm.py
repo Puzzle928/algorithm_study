@@ -206,8 +206,14 @@
 
 # print(sum(l))
 
+최대공약수와 최소공배수
 
-
+# answer = []
+#     a = []
+#     for i in range(1,min(n,m)+1)
+#         if n % i == 0 and m % i == 0 :
+#             a.append(i)
+#     a = set(a)
 
 
 
