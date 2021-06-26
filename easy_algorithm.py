@@ -34,17 +34,17 @@
 #     # 수박수
 
 
-n = int(input())
+# n = int(input())
 
-watermellon = ''
+# watermellon = ''
 
-for i in range(n):
-    watermellon += '수' if i % 2 == 0 else '박'
+# for i in range(n):
+#     watermellon += '수' if i % 2 == 0 else '박'
     # if i % 2 == 0:
     #     watermellon += "수"
     # else: # 짝수
     #     watermellon += "박"
-print(watermellon)
+# print(watermellon)
 # for e in watermellon:
     # print(e, end ="")
     # 수박수
@@ -55,10 +55,10 @@ print(watermellon)
 # String형 배열 seoul의 element중 "Kim"의 위치 x를 찾아, "김서방은 x에 있다"는 String을 반환하는 함수, solution을 완성하세요.
 # seoul에 "Kim"은 오직 한 번만 나타나며 잘못된 값이 입력되는 경우는 없습니다.
 
-seoul = ["Jane", "Kim", 'kang']
-for i,j in enumerate(seoul):
-    if j == "Kim":
-        print(j ,"의 위치는", i , "입니다")
+# seoul = ["Jane", "Kim", 'kang']
+# for i,j in enumerate(seoul):
+#     if j == "Kim":
+#         print(j ,"의 위치는", i , "입니다")
 
 
 # 약수의 합
@@ -244,52 +244,10 @@ for i,j in enumerate(seoul):
 #     return -1
 
 
+#  문자열 다루기 기본
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
-    
-    
-    
-
-
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
+# def solution(s):
+#     if (len(s) == 4 or len(s) == 6) and s.isdigit():
+#         return True
+#     else:
+#         return False
