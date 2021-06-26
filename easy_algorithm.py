@@ -233,10 +233,15 @@ for i,j in enumerate(seoul):
 #     a = set(a)
 
 
-# ㅇㅇ
+# 정수 제곱근 판별 풀이
 
 
-
+# def solution(n):
+#     num = n ** (1/2)
+#     if num == int(num):
+#         return (num+1) ** 2
+    
+#     return -1
 
 
 
